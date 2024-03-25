@@ -24,8 +24,8 @@ class _SideBarWidgetState extends State<SideBarWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: MediaQuery.of(context).size.height * 0.02),
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.02),
                 child: Text(
                   "//Appointments",
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -50,8 +50,8 @@ class _SideBarWidgetState extends State<SideBarWidget> {
                 },
               ),
               Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: MediaQuery.of(context).size.height * 0.01),
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.01),
                 child: Text(
                   "//Servcices",
                   style: TextStyle(fontWeight: FontWeight.bold),
@@ -76,8 +76,8 @@ class _SideBarWidgetState extends State<SideBarWidget> {
                 },
               ),
               Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: MediaQuery.of(context).size.height * 0.02),
+                padding: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.02),
                 child: Text(
                   "//Services",
                   style: TextStyle(fontWeight: FontWeight.bold),

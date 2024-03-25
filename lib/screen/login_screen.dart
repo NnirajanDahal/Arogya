@@ -8,14 +8,14 @@ import 'package:tab_format/helpers/key_helpers.dart';
 import 'package:tab_format/screen/widgets/home_screen_widget.dart';
 import 'package:tab_format/screen/widgets/login_widget.dart';
 
-class HomeScreenView extends StatefulWidget {
-  const HomeScreenView({super.key});
+class LoginScreenView extends StatefulWidget {
+  const LoginScreenView({super.key});
 
   @override
-  State<HomeScreenView> createState() => _HomeScreenViewState();
+  State<LoginScreenView> createState() => _LoginScreenViewState();
 }
 
-class _HomeScreenViewState extends State<HomeScreenView> {
+class _LoginScreenViewState extends State<LoginScreenView> {
   bool _isObscure = true;
 
   @override
@@ -31,9 +31,9 @@ class _HomeScreenViewState extends State<HomeScreenView> {
           // mainAxisAlignment: MainAxisAlignment.start,
           children: [
             SideBarWidget(),
-            // LoginScreenWidget(
-            //   isObscure: _isObscure,
-            // )
+            LoginScreenWidget(
+              isObscure: _isObscure,
+            )
           ],
         ),
       ),

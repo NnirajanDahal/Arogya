@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:tab_format/helpers/app_helpers.dart';
 import 'package:tab_format/helpers/shared_preferences_helper.dart';
 import 'package:tab_format/on_boarding/on_borading_main.dart';
-import 'package:tab_format/screen/home_screen.dart';
+import 'package:tab_format/screen/login_screen.dart';
 
 class SplashScreenView extends StatefulWidget {
   const SplashScreenView({super.key});
@@ -25,9 +25,9 @@ class _SplashScreenViewState extends State<SplashScreenView> {
     });
 
     if (isLoggedIn) {
-      navigateToReplacement(HomeScreenView());
+      navigateToReplacement(LoginScreenView());
     } else {
-      navigateToReplacement(OnBpradingMainScreen());
+      navigateToReplacement(OnBoardingMainScreen());
     }
   }
 

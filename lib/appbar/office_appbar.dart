@@ -24,15 +24,25 @@ class OfficeAppbar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ),
         Padding(
-          padding:
-              const EdgeInsets.only(top: 8, bottom: 8, right: 17, left: 17),
-          child: Image.asset(
-            AppHelpers.splashImage,
-            height: 42,
-            width: 42,
-            fit: BoxFit.fill,
-          ),
-        ),
+            padding: EdgeInsets.only(right: 17),
+            child: Center(
+              child: Text(
+                "PRACAS",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 10,
+                    fontSize: 20,
+                    fontFamily: "JDR Province",
+                    color: Colors.black),
+              ),
+            )
+            //  Image.asset(
+            //   AppHelpers.splashImage,
+            //   height: 42,
+            //   width: 42,
+            //   fit: BoxFit.fill,
+            // ),
+            ),
       ],
       leadingWidth: 65,
       leading: Padding(
