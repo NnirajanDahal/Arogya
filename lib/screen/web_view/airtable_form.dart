@@ -25,7 +25,6 @@ class _DashboardAirtableFormState extends State<DashboardAirtableForm> {
 
   @override
   void dispose() {
-    // Cancel the subscription to avoid memory leaks
     Connectivity().onConnectivityChanged.listen((result) {}).cancel();
     super.dispose();
   }
@@ -67,7 +66,6 @@ class _DashboardAirtableFormState extends State<DashboardAirtableForm> {
   Future<void> checkConnectivity() async {
     await Connectivity().onConnectivityChanged.listen((result) {
       if (result == ConnectivityResult.none) {
-        // No internet connection
         setState(() {
           showProgressIndicator = false;
           errorMessage = 'No internet connection';

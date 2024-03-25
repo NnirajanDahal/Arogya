@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Comfortaa', useMaterial3: false),
-      home: HomeScreenView(),
+      home: SplashScreenView(),
     );
   }
 }
