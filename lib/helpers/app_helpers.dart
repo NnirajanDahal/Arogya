@@ -4,7 +4,8 @@ class AppHelpers {
   static const String appbarLeadingImage = "assets/images/app-icon.png";
   static const String officeLogo = "assets/images/logo.png";
   static const String poweredByMicrosoft = "assets/images/poweredby.png";
-  static const String dashboardAirtableLink = "https://pracas.net/career/";
+  static const String dashboardAirtableLink =
+      "https://airtable.com/app7dhoQeeIorjzOW/shrSBpVH0yQYh4QA5";
 
   static const List<String> drawerTexts1 = [
     "Dr. Thapa",

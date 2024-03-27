@@ -23,9 +23,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "PRACAS | Arogya365",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'Comfortaa', useMaterial3: false),
-      home: SplashScreenView(),
+      home: LoginScreenView(),
     );
   }
 }
